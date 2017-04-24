@@ -11,7 +11,8 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
 var app_component_1 = require("./app.component");
-var palabra_component_1 = require("./palabra.component");
+var formulario_component_1 = require("./formulario.component");
+var http_1 = require("@angular/http");
 //Decorador - funcion que modifica las clases de JS
 var AppModule = (function () {
     //Para poder exportar componentes de esta clase
@@ -21,8 +22,8 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-        declarations: [app_component_1.AppComponent, palabra_component_1.PalabraComponent],
+        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, http_1.JsonpModule],
+        declarations: [app_component_1.AppComponent, formulario_component_1.AppFormulario],
         bootstrap: [app_component_1.AppComponent]
     })
     //Para poder exportar componentes de esta clase

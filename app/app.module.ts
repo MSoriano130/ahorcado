@@ -1,15 +1,16 @@
 //Modulo principal
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms';
-import { AppComponent } from './app.component';
-import { PalabraComponent } from './palabra.component';
+import { AppComponent } from './app.component'
+import { AppFormulario } from './formulario.component'
+import { HttpModule, JsonpModule } from '@angular/http';
 
 //Decorador - funcion que modifica las clases de JS
 
 @NgModule({
-	imports: [ BrowserModule, FormsModule ],
-	declarations: [ AppComponent, PalabraComponent ],
+	imports: [ BrowserModule, FormsModule ,HttpModule, JsonpModule],
+	declarations: [ AppComponent,  AppFormulario ],
 	bootstrap: [ AppComponent ]
 })
 
